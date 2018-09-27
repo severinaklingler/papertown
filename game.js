@@ -142,19 +142,19 @@ PaperTown.prototype._hotspotTypes = [
 		'id' : 'bank',
 		'image' : 'bank.png',
 		'title' : 'Bank',
-		'description' : 'You gain 3 Million at the end of the game for every Bank touching at least one of your renovated tiles.'
+		'description' : 'You gain 3 Million at the end of the game for every Bank touching at least one of your renovated blocks.'
 	},
 	{
 		'id' : 'tool',
 		'image' : 'tool.png',
 		'title' : 'Local branch',
-		'description' : 'For every local branch you may renovate one additional tile at the border of the map.'
+		'description' : 'For every local branch you may renovate one additional block at the border of the map.'
 	},
 	{
 		'id' : 'Bakery',
 		'image' : 'cupcake.png',
 		'title' : 'Bakery',
-		'description' : 'For every bakery you may renovate one addtional tile in the green zone.'
+		'description' : 'For every bakery you may renovate one addtional block in the gray zone.'
 	},
 	{
 		'id' : 'building',
@@ -166,7 +166,7 @@ PaperTown.prototype._hotspotTypes = [
 		'id' : 'bribery',
 		'image' : 'bribery.png',
 		'title' : 'Bribery',
-		'description' : 'Instead of renovating three blocks you may choose to renovate a single block of any color (except black). Normal renovation rules apply.'
+		'description' : 'Instead of your normal turn you may renovate a single block of any color(except black). Normal renovation rules apply.'
 	}
 ];
 
