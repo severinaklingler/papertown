@@ -108,17 +108,32 @@ PaperTown.prototype._goalTypes = [
 	{
 		'id' : 'harbor',
 		'title' : 'Shining new harbor',
-		'description' : 'Gain 1 Million at the end of the game for every renovated tile touching a water (blue) tile.'
+		'description' : 'Gain 1 Million for every renovated block touching a water (blue) block.'
+	},
+	{
+		'id' : 'horizontal',
+		'title' : 'East to West',
+		'description' : 'Gain 1 Million for each horizontal line in the city in which you have renovated at least one block.'
+	},
+	{
+		'id' : 'vertical',
+		'title' : 'North to South',
+		'description' : 'Gain 1 Million for each vertical line in the city in which you have renovated at least one block.'
 	},
 	{
 		'id' : 'bigger',
 		'title' : 'Shining new harbor',
-		'description' : 'Gain 1 Million at the end of the game for every renovated tile touching a water (blue) tile.'
+		'description' : 'Gain 1 Million for every 2 of your renovated blocks in your largest (connected) renovation area.'
 	},
 	{
-		'id' : 'harbor',
-		'title' : 'Shining new harbor',
-		'description' : 'Gain 1 Million at the end of the game for every renovated tile touching a water (blue) tile.'
+		'id' : 'arround-old-town',
+		'title' : 'Renovate arround old town',
+		'description' : 'Gain 1 Million for every renovated block touching an old town (black) block.'
+	},
+	{
+		'id' : 'broadway',
+		'title' : 'A broadway',
+		'description' : 'Gain 2 Million for every renovated block on the horizontal line with the most of your renovated blocks.'
 	}
 ];
 
@@ -140,6 +155,18 @@ PaperTown.prototype._hotspotTypes = [
 		'image' : 'cupcake.png',
 		'title' : 'Bakery',
 		'description' : 'For every bakery you may renovate one addtional tile in the green zone.'
+	},
+	{
+		'id' : 'building',
+		'image' : 'building.png',
+		'title' : 'Building Material',
+		'description' : 'Renovate one addtional block in the color that you are allowed to renovate this turn.'
+	},
+	{
+		'id' : 'bribery',
+		'image' : 'bribery.png',
+		'title' : 'Bribery',
+		'description' : 'Instead of renovating three blocks you may choose to renovate a single block of any color (except black). Normal renovation rules apply.'
 	}
 ];
 
@@ -188,7 +215,10 @@ PaperTown.prototype.images = {
 	'bank.png' : '',
 	'tool.png' : '',
 	'cupcake.png' : '',
-	'mayor.png' : ''
+	'mayor.png' : '',
+	'building.png' : '',
+	'bribery.png' : '',
+	'qrcode.png' : ''
 }
 
 PaperTown.prototype._loadImages = function(afterLoad){
@@ -213,14 +243,15 @@ PaperTown.prototype._createHeader = function(){
 	this.doc.rect(this.startX- this.radius * Math.sqrt(3)/2, headerY, 735, 20).fill('black');
 	this._drawHexagon(this.startX, headerY + 10,24).lineWidth(2).fillOpacity(0.2).fillAndStroke('black', 'white');
 	this.doc.image(this.images['mayor.png'], this.startX -12, headerY -2 , {'width': 24, 'height':24});
-	this.doc.fillColor('white').font('Helvetica-Bold').text('The city mayor is paying for the following:', this.startX+ 35, headerY + 5);
+	this.doc.fillColor('white').font('Helvetica-Bold').text('The mayor is paying for the following (at the end of the game):', this.startX+ 35, headerY + 5);
 
-	let goals = this._goalTypes;
+	let goalIndices = this._randomIndexSet(3, this._goalTypes.length);
+	let goals = Array.from(goalIndices).map(i => this._goalTypes[i])
 	let textWidth = 200;
 	for(let i=0; i<goals.length; i++){
 		let g = goals[i];
-		this.doc.fillColor('black').font('Helvetica-Bold').text(g.title,this.startX + 35 + i * (textWidth+20), headerY + 30, {'width' : textWidth, 'align' : 'left'});
-		this.doc.fillColor('black').font('Helvetica').text(g.description,this.startX + 35 + i * (textWidth+20), headerY + 50, {'width' : textWidth, 'align' : 'left'});
+		this.doc.fillColor('black').font('Helvetica-Bold').text(g.title,this.startX + 35 + i * (textWidth+15), headerY + 30, {'width' : textWidth, 'align' : 'left'});
+		this.doc.fillColor('black').font('Helvetica').text(g.description,this.startX + 35 + i * (textWidth+15), headerY + 50, {'width' : textWidth, 'align' : 'left'});
 	}
 
 	let timeX = headerY + 110;
@@ -228,6 +259,9 @@ PaperTown.prototype._createHeader = function(){
 	for(let i=0; i<10; i++){
 		this.doc.rect(this.startX + 100 + i* 30, timeX-5,20,20).lineWidth(2).fillAndStroke('white', 'black');
 	}
+
+	this.doc.fillColor('white').font('Helvetica').text('Dice: visit bit.ly/2N6haIG or scan:', this.startX+ 490, headerY + 5);
+	this.doc.image(this.images['qrcode.png'], this.startX + 670, headerY -10 , {'width': 80, 'height':80});
 }
 
 PaperTown.prototype._createFooter = function(){
@@ -307,7 +341,7 @@ TownMap.prototype._predecessors = function(x,y){
 		result.push(this.map[y-1][x+1]);
 	}
 	if(y>=0 && x>0){
-		result.push(this.map[y][x-1]);
+		result.push(this.map[y][x-1]); 
 	}
 	return result;
 };
