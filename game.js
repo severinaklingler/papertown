@@ -256,7 +256,7 @@ PaperTown.prototype._createHeader = function(){
 
 	let timeX = headerY + 110;
 	this.doc.fillColor('black').font('Helvetica-Bold').text('Time left:', this.startX + 35, timeX, {'width' : textWidth, 'align' : 'left'});
-	for(let i=0; i<10; i++){
+	for(let i=0; i<16; i++){
 		this.doc.rect(this.startX + 100 + i* 30, timeX-5,20,20).lineWidth(2).fillAndStroke('white', 'black');
 	}
 
