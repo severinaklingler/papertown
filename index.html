@@ -1,203 +1,467 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" type="image/png" href="img/papertown.png">
-    <title>PaperTown - A free roll and write game</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" type="image/png" href="img/papertown.png">
+  <title>PaperTown - A free roll and write game</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom Fonts -->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+  <!-- Custom Fonts -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet"
+    type="text/css">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="css/stylish-portfolio.min.css" rel="stylesheet">
 
-  </head>
+  <link href="css/main.css" rel="stylesheet">
 
-  <body id="page-top">
+</head>
 
-    <!-- Navigation -->
-    <a class="menu-toggle rounded" href="#">
-      <i class="fas fa-bars"></i>
-    </a>
-    <nav id="sidebar-wrapper">
-      <ul class="sidebar-nav">
-        <li class="sidebar-brand">
-          <a class="js-scroll-trigger" href="#page-top">Start Bootstrap</a>
-        </li>
-        <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#page-top">Home</a>
-        </li>
-		<li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#about">About</a>
-        </li>
-        <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#rules">How to play?</a>
-        </li>
-      </ul>
-    </nav>
+<body id="page-top">
 
-    <!-- Header -->
-    <header class="masthead d-flex">
-      <div class="container text-center my-auto">
-        <h1 class="mb-1">PaperTown</h1>
-        <h3 class="mb-5">
-          <em>A Free Roll and Write Game with Procedural Levels</em>
-        </h3>
-        <a class="btn btn-primary btn-xl download-new-sheet" href="#">Download Random Level</a>
-        <div class="hidden-sm-up mt-2"></div>
-		    <a class="btn btn-xl btn-dark ml-4 js-scroll-trigger" href="#rules">Read Rules</a>
+  <!-- Navigation -->
+  <a class="menu-toggle rounded" href="#">
+    <i class="fas fa-bars"></i>
+  </a>
+  <nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <li class="sidebar-brand">
+        <a class="js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#page-top">Home</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#about">About</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#rules">How to play?</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead d-flex">
+    <div class="container text-center my-auto">
+      <h1 class="mb-1">PaperTown</h1>
+      <h3 class="mb-5">
+        <em>A Free Roll and Write Game with Procedural Levels</em>
+      </h3>
+      <a class="btn btn-primary btn-xl download-new-sheet" href="#">Download Random Level</a>
+      <div class="hidden-sm-up mt-2"></div>
+      <a class="btn btn-xl btn-dark ml-4 js-scroll-trigger" href="#rules">Read Rules</a>
+    </div>
+    <div class="overlay"></div>
+  </header>
+
+  <!-- Services -->
+  <section class="content-section bg-primary text-white" id="about">
+    <div class="container">
+      <div class="content-section-heading">
+        <h3 class="text-secondary mb-0">What is PaperTown?</h3>
+        <h2 class="mb-5">Introduction</h2>
+        <p class="lead mb-5"><b>PaperTown</b> is a free roll and write game for 2 players that you can print and start
+          playing immediately. All you need is a color printer (B/W version comming soon), a smartphone (used for the
+          'roll' part) and a pen.</p>
+        <p class="lead mb-5"><b>Your Task.</b> You have been asked by the city's mayor together with another
+          construction company to renovate her town. The town is alway different, the goals of the mayor change and the
+          special powers you can collect are different as well. Can you still win?</p>
+        <p class="lead mb-5"><b>Procedural levels.</b> While this game is inspired by recent roll and write games such
+          as Noch mal! and board games such as Kingdom Builder, it brings random level generation to print and play
+          games (for the first time?).</p>
       </div>
-      <div class="overlay"></div>
-    </header>
-
-	<!-- Services -->
-    <section class="content-section bg-primary text-white" id="about">
-      <div class="container">
-        <div class="content-section-heading">
-          <h3 class="text-secondary mb-0">What is PaperTown?</h3>
-          <h2 class="mb-5">Introduction</h2>
-		  <p class="lead mb-5"><b>PaperTown</b> is a free roll and write game for 2 players that you can print and start playing immediately. All you need is a color printer (B/W version comming soon), a smartphone (used for the 'roll' part) and a pen.</p>
-      <p class="lead mb-5"><b>Your Task.</b> You have been asked by the city's mayor together with another construction company to renovate her town. The town is alway different, the goals of the mayor change and the special powers you can collect are different as well. Can you still win?</p>
-      <p class="lead mb-5"><b>Procedural levels.</b> While this game is inspired by recent roll and write games such as Noch mal! and board games such as Kingdom Builder, it brings random level generation to print and play games (for the first time?).</p>
+      <div class="row text-center">
+        <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-pencil"></i>
+          </span>
+          <h4>
+            <strong>Roll and Write</strong>
+          </h4>
+          <p class="text-faded mb-0">Easy game play for 2 players. Grab a pen and your smartphone and start playing.</p>
         </div>
-        <div class="row text-center">
-          <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
-            <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="icon-pencil"></i>
-            </span>
-            <h4>
-              <strong>Roll and Write</strong>
-            </h4>
-            <p class="text-faded mb-0">Easy game play for 2 players. Grab a pen and your smartphone and start playing.</p>
+        <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-printer"></i>
+          </span>
+          <h4>
+            <strong>Print and Play - Unleashed</strong>
+          </h4>
+          <p class="text-faded mb-0">Use your printer to create as many procedurally levels as you want. Everytime you
+            hit 'Download' a new level is generated for you.</p>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-5 mb-md-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="fa fa-frog"></i>
+          </span>
+          <h4>
+            <strong>Free!</strong>
+          </h4>
+          <p class="text-faded mb-0">Download as many levels as you want. For free!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rules -->
+  <section class="content-section bg-light" id="rules">
+    <div class="container">
+      <div class="content-section-heading">
+        <h3 class="text-secondary mb-0">Rules</h3>
+        <h2 class="mb-5">How to Play PaperTown?</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-10">
+          <a class="btn btn-primary btn-lg js-scroll-trigger" href="doc/PaperTown_Rules.pdf" download>Download Complete
+            Rules PDF</a>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-7">
+          <h4>Introduction</h4>
+        </div>
+        <div class="col-md-5 border-left"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-7">
+          <p>PaperTown is a roll and write game for 1-2 players in which you are trying to redevelop parts of a town
+            according to the goals of the town’s mayor.</p>
+          <p>As in most roll and write games you will achieve this in turns of making the best out of random dice rolls
+            (in PaperTown you use your mobile phone for this). You will have to adjust your long term strategy with
+            tactical turn-to-turn choices.
+          </p>
+        </div>
+        <div class="col-md-5 border-left">
+          <div class="content-section-heading">
+            <h3 class="text-secondary mb-0">Note</h3>
           </div>
-          <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
-            <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="icon-printer"></i>
-            </span>
-            <h4>
-              <strong>Print and Play - Unleashed</strong>
-            </h4>
-            <p class="text-faded mb-0">Use your printer to create as many procedurally levels as you want. Everytime you hit 'Download' a new level is generated for you.</p>
+          This game was inspired by recent roll and write games such as “Noch mal!” and board games such as “Kingdom
+          Builder”.
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-7">
+          <h4>Object of the game</h4>
+        </div>
+        <div class="col-md-5 border-left"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-7">
+          <p>By redeveloping a town according to the goals of its mayor you will earn money at the end of the game. The
+            player who earns the most is the winner of PaperTown.</p>
+          <p>The mayor rewards money for different redevelopment projects within the town. These pro-jects are printed
+            on top of the page and might be different from game to game.</p>
+        </div>
+        <div class="col-md-5 border-left">
+          <div class="content-section-heading">
+            <h3 class="text-secondary mb-0">Example</h3>
+          </div>
+          The mayor announces the different redevelopment projects that you can earn money with at the top of the page.
+          <img src="img/development-projects.png" class="img-fluid" alt="An example of development projects">
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-7">
+          <h4>Setup</h4>
+        </div>
+        <div class="col-md-5 border-left"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-7">
+          <p>To setup a game of PaperTown you need</p>
+          <ol>
+            <li><b>Printed game sheet</b> - download a new game sheet <a href="#" class="download-new-sheet">here</a>.</li>
+            <li><b>Smartphone</b> with Internet access</li>
+            <li><b>Pens or pencils</b></li>
+          </ol>
+          <p>Before you start playing enter the URL (or use the QR-Code) printed on the game sheet on your smartphone.
+            You will use the website instead of dice.</p>
+        </div>
+        <div class="col-md-5 border-left">
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-7">
+          <h4>Game (2 players)</h4>
+        </div>
+        <div class="col-md-5 border-left"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-7 pb-3">
+          Players take turns marking blocks in the city (representing redevelopment work they per-form).
+        </div>
+        <div class="col-md-5 border-left">
+          The <b>single player</b> variant is described below.
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-7">
+          The game lasts over several rounds until the time track is filled up. Players mark a box on the time track
+          after each turn. The game ends when the final box is checked off.
+        </div>
+        <div class="col-md-5 border-left">
+          <div class="content-section-heading">
+            <h3 class="text-secondary mb-0">Example</h3>
+          </div>
+          Players cross of one space on the time track after each turn.
+          <div class="row">
+            <div class="col-8">
+                <img src="img/time-tracker.png" class="img-fluid" alt="Time tracker">
+            </div>
           </div>
           
-          <div class="col-lg-4 col-md-6 mb-5 mb-md-0">
-            <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="fa fa-frog"></i>
-            </span>
-            <h4>
-              <strong>Free!</strong>
-            </h4>
-            <p class="text-faded mb-0">Download as many levels as you want. For free!</p>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-7">
+          <h4>Turn</h4>
+        </div>
+        <div class="col-md-5 border-left"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-7">
+          <p>At the beginning of the turn the active player, presses the ‘Roll’ button on the smartphone to get the
+            block color that they are allowed to build this turn.</p>
+          <ol>
+            <li>During their turn, the player <b>must mark exactly 3 blocks</b> in this color on the map (e.g. using
+              either a cross ‘X’ or a circle ‘O’ mark). They have to follow the marking rules below.</li>
+            <li><b>In addition</b> to the 3 blocks, players can mark additional blocks if they have acquired <b>special
+                powers</b>.</li>
+          </ol>
+        </div>
+        <div class="col-md-5 border-left">
+          <div class="content-section-heading">
+            <h3 class="text-secondary mb-0">Example</h3>
+          </div>
+          Players are only allowed to mark blocks in the color shown (yellow blocks in this case).
+          <div class="row">
+            <div class="col-6">
+                <img src="img/online-dice.png" class="img-fluid" alt="Screenshot of the online dice website">
+            </div>
           </div>
         </div>
       </div>
-    </section>
-	
-    <!-- Rules -->
-    <section class="content-section bg-light" id="rules">
-      <div class="container">
-        <div class="content-section-heading">
-            <h3 class="text-secondary mb-0">Rules overview</h3>
-            <h2 class="mb-5">How to Play PaperTown?</h2>
+      <div class="row mt-3">
+        <div class="col-md-7">
+          <h4>Marking rules</h4>
+        </div>
+        <div class="col-md-5 border-left"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-7">
+          <p>The player must mark blocks on the map that are adjacent to previously marked own blocks, whenever
+            possible.</p>
+          <p>If the player cannot mark an adjacent block (e.g. in the beginning of the game), you may choose any block
+            in the color shown on your smartphone.</p>
+          <p>In case there is no free block of that color, the player may mark a block of a different color (fol-lowing
+            the adjacency rule).</p>
+        </div>
+        <div class="col-md-5 border-left">
+          <div class="content-section-heading">
+            <h3 class="text-secondary mb-0">Example</h3>
+          </div>
+          Player 1 marks blocks with a ‘X’. All blocks that he marks have to be adja-cent to one of ‘his’ blocks.
+          <div class="row mt-2">
+            <div class="col-6"><b>Allowed</b></div>
+            <div class="col-6"><b>Not allowed</b></div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <img src="img/placement-allowed.png" class="img-fluid" alt="Example of allowed placement">
+            </div>
+            <div class="col-6">
+              <img src="img/placement-not-allowed.png" class="img-fluid" alt="Example of a not allowed placement">
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-7">
+          <h4>Special powers</h4>
+        </div>
+        <div class="col-md-5 border-left"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-7">
+          <p>During the game players can acquire special powers that are shown below the map on the game sheet. These
+            special powers typically al-low the player to mark additional blocks on the map (performing additional
+            redevelopments).</p>
+          <p>Every acquired special power <b>may be used only once per turn</b>.</p>
+        </div>
+        <div class="col-md-5 border-left">
+          <div class="content-section-heading">
+            <h3 class="text-secondary mb-0">Example</h3>
+          </div>
+          The special powers are explained on the game sheet.
+          <div class="row">
+              <div class="col-8">
+                  <img src="img/special-power.png" class="img-fluid" alt="Example of a special power">
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col-md-7">
+          <p><b>Acquiring a special power.</b> A player gets a special power when he/she is building adjacent to a
+            special power block.
+            The player marks her new special power on the sheet and crosses of the special power block on the map.
+            Every special power block can be tak-en by one player only (but there are two special power blocks per
+            power type).
+          </p>
+        </div>
+        <div class="col-md-5 border-left">
+          <div class="content-section-heading">
+            <h3 class="text-secondary mb-0">Example</h3>
+          </div>
+          <p>When you mark a block next to a special power block…</p>
+          <div class="row mb-3">
+            <div class="col-8">
+                <img src="img/special-power-acquisition.png" class="img-fluid" alt="Example of a special power">
+            </div>
+          </div>
+         <p>…you cross of the special block and get the special power</p>
+          <div class="row">
+            <div class="col-6">
+              <img src="img/special-power-cross-off.png" class="img-fluid" alt="Example of allowed placement">
+            </div>
+            <div class="col-6">
+              <img src="img/special-power-marked.png" class="img-fluid" alt="Example of a not allowed placement">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3">
+          <div class="col-md-7">
+            <h4>End of game and scoring</h4>
+          </div>
+          <div class="col-md-5 border-left"></div>
         </div>
         <div class="row">
-          <div class="col-lg-10">
-            
-            <a class="btn btn-dark btn-xl js-scroll-trigger" href="doc/PaperTown_Rules.pdf" download>Download Complete Rules PDF</a>
-            <!-- <a class="btn btn-dark btn-xl js-scroll-trigger" href="https://twitter.com/intent/tweet?screen_name=SeverinKlingler&ref_src=twsrc%5Etfw">Questions?</a> -->
+          <div class="col-md-7">
+            <p>As soon as the last box of the time tracker is checked the game ends (after 8 turns per player). Players are counting the money they earn based on the mayor’s objectives.</p>
+            <p>The player with the highest score is the winner of the game. In case of a tie, the player with more special powers wins.</p>
+          </div>
+          <div class="col-md-5 border-left">
           </div>
         </div>
-      </div>
-    </section>
+        <div class="row mt-3">
+            <div class="col-md-7">
+              <h4>Single player variant</h4>
+            </div>
+            <div class="col-md-5 border-left"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-7">
+             <p>For the single player variant all rules are the same as for the normal game, except that the player is controlling two virtual opponent players.</p>
+             <p>After his or her turn the player performs two additional turns following the standard rules. The player may choose to mark blocks in a way that are least beneficial to the virtual opponent players.</p>
+             <p>The player wins if his final score is large than the sum of the scores of the two virtual players.</p>
+             <p><b>Difficulty.</b> To make the game harder mark 4 blocks for each opponent player. To make it easier only mark 2 blocks per opponent player.</p>
+            </div>
+            <div class="col-md-5 border-left">
+                <div class="content-section-heading">
+                    <h3 class="text-secondary mb-0">Example</h3>
+                  </div>
+                  <p>The player marks blocks with a ‘X’. He or she may mark spaces for the virtual players (here ‘[]’ and ‘O’) however he/she likes.</p>
+                  <div class="row mb-3">
+                      <div class="col-8">
+                          <img src="img/single-player-variant.png" class="img-fluid" alt="Example of a special power">
+                      </div>
+                    </div>
+            </div>
+          </div>
+    </div>
+    </div>
+  </section>
 
-    <!-- Callout -->
-    <section class="callout">
-      <div class="container text-center">
-        <h2 class="mx-auto mb-5">All you need is a color printer and a smartphone. It's free!</h2>
-        <a class="btn btn-primary btn-xl download-new-sheet" href="#">Start Playing Now!</a>
-      </div>
-    </section>
+  <!-- Callout -->
+  <section class="callout">
+    <div class="container text-center">
+      <h2 class="mx-auto mb-5">All you need is a color printer and a smartphone. It's free!</h2>
+      <a class="btn btn-primary btn-xl download-new-sheet" href="#">Start Playing Now!</a>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="footer text-center">
-      <div class="container">
-		<h2 class="mb-5">I would love to hear your feedback. Get in touch.</h2>
-        <ul class="list-inline mb-5">
-          <li class="list-inline-item">
-            <a class="social-link rounded-circle text-white mr-3 email-link" href="#">
-              <i class="icon-envelope-letter"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a class="social-link rounded-circle text-white mr-3" href="https://twitter.com/intent/tweet?screen_name=SeverinKlingler&ref_src=twsrc%5Etfw">
-              <i class="icon-social-twitter"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a class="social-link rounded-circle text-white" href="https://github.com/severinaklingler/papertown">
-              <i class="icon-social-github"></i>
-            </a>
-          </li>
-        </ul>
-        <p class="text-muted small mb-0">Copyright &copy; Severin Klingler 2018</p>
-      </div>
-    </footer>
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <h2 class="mb-5">I would love to hear your feedback. Get in touch.</h2>
+      <ul class="list-inline mb-5">
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3 email-link" href="#">
+            <i class="icon-envelope-letter"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="https://twitter.com/intent/tweet?screen_name=SeverinKlingler&ref_src=twsrc%5Etfw">
+            <i class="icon-social-twitter"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white" href="https://github.com/severinaklingler/papertown">
+            <i class="icon-social-github"></i>
+          </a>
+        </li>
+      </ul>
+      <p class="text-muted small mb-0">Copyright &copy; Severin Klingler 2018</p>
+    </div>
+  </footer>
 
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
-      <i class="fas fa-angle-up"></i>
-    </a>
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/stylish-portfolio.min.js"></script>
+  <!-- Custom scripts for this template -->
+  <script src="js/stylish-portfolio.min.js"></script>
 
-    <script src='blob-stream.js'></script>
-    <script src="pdfkit.js"></script>
-    <script src="convertToPdf.js"></script>
-    <script src="game.js"></script>
+  <script src='blob-stream.js'></script>
+  <script src="pdfkit.js"></script>
+  <script src="convertToPdf.js"></script>
+  <script src="game.js"></script>
 
-    <script type="text/javascript" language="javascript">
-      <!--
-      // Email obfuscator script 2.1 by Tim Williams, University of Arizona
-      // Random encryption key feature coded by Andrew Moulden
-      // This code is freeware provided these four comment lines remain intact
-      // A wizard to generate this code is at http://www.jottings.com/obfuscator/
-      { coded = "OlOSv-p6L9@6xpK66X.a61";
-        key = "1V2WZsfMIrOlY3b7gExkBUioFwQTtcnveKN8qyDRmXjJP6AL0hpa9zS4CGuHd5";
-        shift=coded.length;
-        link="";
-        for (i=0; i<coded.length; i++) {
-          if (key.indexOf(coded.charAt(i))==-1) {
-            ltr = coded.charAt(i);
-            link += (ltr);
-          }
-          else {     
-            ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length;
-            link += (key.charAt(ltr));
-          }
+  <script type="text/javascript" language="javascript">
+    <!--
+    // Email obfuscator script 2.1 by Tim Williams, University of Arizona
+    // Random encryption key feature coded by Andrew Moulden
+    // This code is freeware provided these four comment lines remain intact
+    // A wizard to generate this code is at http://www.jottings.com/obfuscator/
+    {
+      coded = "OlOSv-p6L9@6xpK66X.a61";
+      key = "1V2WZsfMIrOlY3b7gExkBUioFwQTtcnveKN8qyDRmXjJP6AL0hpa9zS4CGuHd5";
+      shift = coded.length;
+      link = "";
+      for (i = 0; i < coded.length; i++) {
+        if (key.indexOf(coded.charAt(i)) == -1) {
+          ltr = coded.charAt(i);
+          link += (ltr);
+        } else {
+          ltr = (key.indexOf(coded.charAt(i)) - shift + key.length) % key.length;
+          link += (key.charAt(ltr));
         }
-        $(".email-link").prop("href", "mailto:"+link);
       }
-      //-->
-      </script><noscript>Sorry, you need Javascript on to email me.</noscript>
+      $(".email-link").prop("href", "mailto:" + link);
+    }
+    //-->
+  </script><noscript>Sorry, you need Javascript on to email me.</noscript>
 
-  </body>
+</body>
 
 </html>
