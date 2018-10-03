@@ -265,9 +265,9 @@ PaperTown.prototype._createHeader = function(){
 }
 
 PaperTown.prototype._createFooter = function(){
-	let footerY = 500;
+	let footerY = 490;
 	let boxWidth = 231;
-	let boxHeight = 80;
+	let boxHeight = 90;
 	let footerX = this.startX- this.radius * Math.sqrt(3)/2;
 
 	let differentHotspots = [];
